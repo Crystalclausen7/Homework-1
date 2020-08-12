@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+ 
+<title>Weather App</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+<style>
+  .card-body a {
+      word-break: break-all;
+  }
+  .articleHeadline {
+      line-height: 1.5;
+  }
+</style>
+<body>
+    <div class="container">
+    
+    
+        <div class="jumbotron" style="background-color: #20315A; color:white;"></div>
+<h1>Weather Dashboard</h1>
+<strong>
+    <i class="fa fa-weather-o"></i> Weather App</strong>
+</h1>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <br>
+
+        <div class="card">
+            <div class="card-header">
+                <strong>
+                    <i class="fa fa-list-alt"></i>City Search</strong>
+                
+            </div>
+        </div class="card-body">
+
+        <form role="form">
+            <div class="form-group">
+                <label for="City Search">Search Term:</label>
+            <input type="text" class="form-control" id="search-term">
+             </div>
+
+             <div class="form-group">
+                 <label for="pwd">Number of Records to Retrieve:</label>
+             <select id="article-count" class="custom-select" aria-labelledby="dropdownMenuButton">
+                 <option value="5" selected>5</option>
+                 <option value="10">10</option>
+             </select>
+             </div>
+
+
+             <div class="form-group">
+                 <label for="start-year">Start Year (Optional):</label>
+             <input type="text" class="form-control" id="start-year">
+                 </div
+
+                 <div class="form-group">
+                     <label for="end-year">End Year (Optional):</label>
+                 <input type="text" class="form-control" id="end-year">
+                    </div>
+
+                    <button type="submit" class="btn btn-default" id="run-search">
+                        <i class="fa fa-search"></i> Search</button>
+                        <button class="btn btn-default" id="clear-all">
+                            <i class="fa fa-trash"></i> Clear Results</button>
+                    
+        </form>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <br>
+
+        <div class="card">
+
+            <div class="card-body">
+                <strong>
+                    <i class="fa fa-table"></i> "5 day forecast"</strong>
+            </div>
+                
+            <div class="card-body" id="article-section">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+
+        <hr>
+        <h5 class="text-center">
+            <small>Made with lots and lots of
+                <i class="fa fa-heart"></i>
+            </small>
+        </h5>
+
+    </div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+
+<script src="logic.js"></script>
+
+
+<div id="Current Weather"></div>
+<div id="5 day forecast"></div>
+<div id= "City Search"></div>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+  
+</html>
