@@ -1,0 +1,23 @@
+body {
+    background:lightblue;
+    color: blue;
+}
+
+.content{
+    margin: auto;
+    width: 50%;
+    margin-top: 160px;
+    font-family: "Lucida Console", 'Courier New', Courier, monospace;
+}
+
+li {
+    background: lightgray;
+    margin: 5px 0px;
+}
+
+#timer {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+}
